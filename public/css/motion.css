@@ -1,0 +1,75 @@
+/* Motion: intro curtain, ambient loops and reduced-motion overrides.
+   boot.js sets .has-intro and .motion-pending before first paint; main.js
+   clears them. The failsafe animations reveal content if main.js never runs. */
+
+.intro { display: none; }
+
+.has-intro .intro {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  display: grid;
+  place-items: center;
+  pointer-events: auto;
+  animation: failsafe-hide 0s 5s forwards;
+}
+.intro__panel {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 50.5%;
+  background: var(--ink-0);
+}
+.intro__panel--top { top: 0; }
+.intro__panel--bottom { bottom: 0; }
+.intro__line {
+  position: relative;
+  font-family: var(--font-display);
+  font-size: var(--step-4);
+  font-weight: 700;
+  font-stretch: 84%;
+  letter-spacing: -0.04em;
+}
+.intro__beam {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  margin-top: -1px;
+  background: linear-gradient(90deg, transparent, var(--orange) 30%, var(--amber) 50%, var(--orange) 70%, transparent);
+  transform: scaleX(0);
+  box-shadow: 0 0 24px 2px rgb(243 128 32 / 0.6);
+}
+
+.motion-pending [data-hero-item],
+.motion-pending [data-split],
+.motion-pending .hero__globe {
+  opacity: 0;
+  animation: failsafe-show 0s 5s forwards;
+}
+
+@keyframes failsafe-hide { to { visibility: hidden; opacity: 0; } }
+@keyframes failsafe-show { to { opacity: 1; } }
+
+.pulse::after { animation: pulse 2.4s var(--ease-out) infinite; }
+@keyframes pulse {
+  0% { transform: scale(0.6); opacity: 0.9; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+
+.menu:not([hidden]) .menu__globe { animation: spin 90s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.t-cursor { animation: blink 1s steps(1) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .phone { transform: none; }
+}

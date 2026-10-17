@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pedro M. Dominguez | Web apps for Oklahoma City businesses</title>
+  <meta name="description" content="One person, one paradigm shift. Pedro M. Dominguez builds and runs fast web apps for Oklahoma City local businesses and nonprofits with Claude Code and Cloudflare Workers.">
+  <meta name="theme-color" content="#0a0e1a">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pedro M. Dominguez | One person, one paradigm shift">
+  <meta property="og:description" content="Web apps for Oklahoma City local businesses and nonprofits, built and run by one person with Claude Code and Cloudflare Workers.">
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/tokens.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/nav.css">
+  <link rel="stylesheet" href="/css/hero.css">
+  <link rel="stylesheet" href="/css/sections.css">
+  <link rel="stylesheet" href="/css/motion.css">
+  <script src="/js/boot.js"></script>
+  <script type="module" src="/js/main.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Pedro M. Dominguez",
+    "description": "Web apps for Oklahoma City local businesses and nonprofits, built with Claude Code and Cloudflare Workers.",
+    "email": "domingueztechsolutions@gmail.com",
+    "telephone": "+1-405-984-7036",
+    "areaServed": "Oklahoma City, OK",
+    "address": { "@type": "PostalAddress", "addressLocality": "Oklahoma City", "addressRegion": "OK", "addressCountry": "US" },
+    "priceRange": "$300",
+    "sameAs": ["https://github.com/grenas405", "https://www.instagram.com/pedrom.dominguez/"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="intro" data-intro aria-hidden="true">
+    <div class="intro__panel intro__panel--top"></div>
+    <div class="intro__panel intro__panel--bottom"></div>
+    <p class="intro__line" data-intro-line>One person.</p>
+    <span class="intro__beam" data-intro-beam></span>
+  </div>
+
+  <header class="site-header" data-header>
+    <span class="site-header__progress" data-progress></span>
+    <div class="site-header__inner">
+      <a class="brand" href="#top" aria-label="Pedro M. Dominguez, back to top">
+        <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-opacity=".35" stroke-width="1.5"/>
+          <ellipse cx="16" cy="16" rx="14" ry="5.5" fill="none" stroke="currentColor" stroke-opacity=".35" stroke-width="1.5"/>
+          <circle class="brand__node" cx="16" cy="16" r="4.5"/>
+        </svg>
+        <span class="brand__name">Pedro M. Dominguez</span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary">
+        <ul class="primary-nav__list" data-nav-list>
+          <li><a href="#paradigm" data-nav-link>The shift</a></li>
+          <li><a href="#stack" data-nav-link>How it works</a></li>
+          <li><a href="#work" data-nav-link>Work</a></li>
+          <li><a href="#story" data-nav-link>Story</a></li>
+          <li><a href="#pricing" data-nav-link>Pricing</a></li>
+        </ul>
+        <span class="primary-nav__indicator" data-nav-indicator aria-hidden="true"></span>
+      </nav>
+
+      <div class="site-header__actions">
+        <a class="button button--primary button--small" href="#contact">Book a free call</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" data-menu-toggle>
+          <span class="menu-toggle__label" data-menu-label>Menu</span>
+          <span class="menu-toggle__icon" aria-hidden="true"><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Site menu" hidden data-menu>
+    <div class="menu__backdrop" data-menu-backdrop></div>
+    <svg class="menu__globe" viewBox="-110 -110 220 220" aria-hidden="true" data-menu-globe>
+      <circle r="100"/>
+      <ellipse rx="100" ry="38"/>
+      <ellipse rx="100" ry="72"/>
+      <ellipse rx="38" ry="100"/>
+      <ellipse rx="72" ry="100"/>
+      <line x1="-100" y1="0" x2="100" y2="0"/>
+      <line x1="0" y1="-100" x2="0" y2="100"/>
+    </svg>
+    <div class="menu__inner">
+      <ol class="menu__list">
+        <li class="menu__item"><a class="menu__link" href="#paradigm" data-menu-link><span class="menu__title">The shift</span><span class="menu__desc">Why one person can now do an agency's job</span></a></li>
+        <li class="menu__item"><a class="menu__link" href="#stack" data-menu-link><span class="menu__title">How it works</span><span class="menu__desc">Claude Code and Cloudflare's global network</span></a></li>
+        <li class="menu__item"><a class="menu__link" href="#work" data-menu-link><span class="menu__title">Work</span><span class="menu__desc">Live sites for real organizations</span></a></li>
+        <li class="menu__item"><a class="menu__link" href="#story" data-menu-link><span class="menu__title">Story</span><span class="menu__desc">From Ciudad Juárez to Oklahoma City</span></a></li>
+        <li class="menu__item"><a class="menu__link" href="#pricing" data-menu-link><span class="menu__title">Pricing</span><span class="menu__desc">$300 to build, $20 a month to run</span></a></li>
+        <li class="menu__item"><a class="menu__link" href="#contact" data-menu-link><span class="menu__title">Contact</span><span class="menu__desc">Tell me about your business</span></a></li>
+      </ol>
+      <aside class="menu__aside" data-menu-aside>
+        <p class="menu__clock"><span class="menu__clock-label">Oklahoma City</span> <time data-okc-clock>--:--</time></p>
+        <p class="menu__note">Every project is built, launched and supported by the same person. Text me and you reach Pedro.</p>
+        <ul class="menu__contact">
+          <li><a href="sms:+14059847036">Text (405) 984-7036</a></li>
+          <li><a href="mailto:domingueztechsolutions@gmail.com">domingueztechsolutions@gmail.com</a></li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <canvas class="hero__globe" data-globe aria-hidden="true"></canvas>
+      <div class="hero__shade" aria-hidden="true"></div>
+      <div class="hero__content container">
+        <p class="hero__locale" data-hero-item>
+          <span class="pulse" aria-hidden="true"></span>
+          Oklahoma City, 35.47° N 97.52° W
+        </p>
+        <h1 class="hero__title" id="hero-title">
+          <span class="hero__line" data-split>One person.</span>
+          <span class="hero__line hero__line--accent" data-split>One paradigm shift.</span>
+        </h1>
+        <p class="hero__lead" data-hero-item>
+          I'm Pedro M. Dominguez. I build and run web apps for Oklahoma City's local businesses and nonprofits, by myself, with Claude Code and Cloudflare Workers.
+        </p>
+        <div class="hero__actions" data-hero-item>
+          <a class="button button--primary" href="#contact">Book a free 30-minute call</a>
+          <a class="button button--ghost" href="#work">See live client sites</a>
+        </div>
+      </div>
+      <p class="hero__caption" data-hero-item aria-hidden="true">Requests leaving Oklahoma City for Cloudflare's edge</p>
+    </section>
+
+    <section class="section paradigm" id="paradigm" aria-labelledby="paradigm-title">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title" id="paradigm-title">A web app used to take an agency. Now it takes one person.</h2>
+          <p class="section__lead">Local businesses and nonprofits have been priced out of good software for years. AI-assisted development and edge hosting changed the math. Compare the two ways to get the same app.</p>
+        </div>
+
+        <div class="compare" data-compare>
+          <div class="compare__switch" role="group" aria-label="Compare ways to build">
+            <button type="button" class="compare__option" aria-pressed="false" data-compare-option="agency">Typical agency</button>
+            <button type="button" class="compare__option" aria-pressed="true" data-compare-option="pedro">One person</button>
+            <span class="compare__thumb" data-compare-thumb aria-hidden="true"></span>
+          </div>
+          <dl class="compare__rows" aria-live="polite">
+            <div class="compare__row">
+              <dt>Who builds it</dt>
+              <dd data-agency="Account managers, designers and a dev team" data-pedro="Pedro, start to finish">Pedro, start to finish</dd>
+            </div>
+            <div class="compare__row">
+              <dt>Time to launch</dt>
+              <dd data-agency="Months" data-pedro="1 to 3 weeks">1 to 3 weeks</dd>
+            </div>
+            <div class="compare__row">
+              <dt>Cost to build</dt>
+              <dd data-agency="Thousands of dollars" data-pedro="$300">$300</dd>
+            </div>
+            <div class="compare__row">
+              <dt>Cost to keep it running</dt>
+              <dd data-agency="Retainers, plugins and hosting plans" data-pedro="$20 a month, all in">$20 a month, all in</dd>
+            </div>
+            <div class="compare__row">
+              <dt>Who owns the code</dt>
+              <dd data-agency="Often the agency or the platform" data-pedro="You do">You do</dd>
+            </div>
+            <div class="compare__row">
+              <dt>Who you call for a change</dt>
+              <dd data-agency="A ticket queue" data-pedro="Pedro, by text">Pedro, by text</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section stack" id="stack" aria-labelledby="stack-title">
+      <div class="container stack__grid">
+        <div class="stack__copy">
+          <h2 class="section__title" id="stack-title">How one person does the work of a team</h2>
+          <ol class="stack__steps">
+            <li class="stack__step">
+              <h3>Claude Code writes alongside me</h3>
+              <p>Claude Code is an AI coding partner that runs on my Linux workstation. I decide what your app needs; it helps write, test and fix the code. Work that used to need a team fits into one person's week.</p>
+            </li>
+            <li class="stack__step">
+              <h3>Cloudflare Workers runs your app</h3>
+              <p>Your app is deployed to Cloudflare's network in more than 330 cities. There is no server to babysit, HTTPS is on by default, and pages load fast on any phone.</p>
+            </li>
+            <li class="stack__step">
+              <h3>Your customers just open a link</h3>
+              <p>No app store and no download. It works in the browser on any iPhone or Android, in English and Spanish when you need both.</p>
+            </li>
+          </ol>
+        </div>
+
+        <figure class="terminal" data-terminal>
+          <div class="terminal__bar">
+            <span class="terminal__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="terminal__title">pedro@okc: ~/your-business</span>
+            <button type="button" class="terminal__replay" data-terminal-replay>Replay</button>
+          </div>
+          <pre class="terminal__body" data-terminal-body><code><span class="t-prompt">$</span> claude
+<span class="t-dim">&gt;</span> Add a Spanish version of the services page and a quote request form.
+<span class="t-ok">✓</span> Updated 4 files
+<span class="t-ok">✓</span> 18 tests passed
+<span class="t-prompt">$</span> npx wrangler deploy
+<span class="t-dim">Uploaded your-business</span>
+<span class="t-ok">✓</span> Deployed to Cloudflare's global network
+<span class="t-accent">https://your-business.com</span> is live</code></pre>
+          <figcaption class="terminal__caption">A typical change request, from your text message to live, in one sitting.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section work" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title" id="work-title">Live sites for real organizations</h2>
+          <p class="section__lead">Each one was built by me, and each one is online right now. These are phone screenshots of their home pages, because that is where their customers find them.</p>
+        </div>
+
+        <ul class="work__list">
+          <li class="case">
+            <div class="phone" data-tilt>
+              <img src="/img/work/msmokc.webp" width="480" height="891" loading="lazy" decoding="async" alt="Mercy Seat Ministries home page on a phone: Come and find grace and rest, with service times and a prayer wall.">
+            </div>
+            <div class="case__body">
+              <p class="case__meta">Nonprofit in Newcastle, Oklahoma</p>
+              <h3 class="case__title">Mercy Seat Ministries</h3>
+              <p>A church website with service times, ministries, devotionals and a prayer wall where the congregation can share requests between Sundays.</p>
+              <a class="case__link" href="https://msmokc.org" rel="noopener noreferrer" target="_blank">Visit msmokc.org</a>
+            </div>
+          </li>
+          <li class="case">
+            <div class="phone" data-tilt>
+              <img src="/img/work/heavenly-roofing.webp" width="480" height="891" loading="lazy" decoding="async" alt="Heavenly Roofing LLC home page on a phone: Storm damage? We're there, with a call button.">
+            </div>
+            <div class="case__body">
+              <p class="case__meta">Business in Oklahoma City, my first client</p>
+              <h3 class="case__title">Heavenly Roofing LLC</h3>
+              <p>Xactimate estimating and supplement support for roofing contractors. The site explains the partnership clearly and sends every lead straight to the owner.</p>
+              <a class="case__link" href="https://heavenlyroofingllc.com" rel="noopener noreferrer" target="_blank">Visit heavenlyroofingllc.com</a>
+            </div>
+          </li>
+          <li class="case">
+            <div class="phone" data-tilt>
+              <img src="/img/work/praxedis.webp" width="480" height="891" loading="lazy" decoding="async" alt="Praxedis Technologies home page on a phone: Built directly, for local growth.">
+            </div>
+            <div class="case__body">
+              <p class="case__meta">My own venture, Chihuahua, México</p>
+              <h3 class="case__title">Praxedis Technologies</h3>
+              <p>Websites, lead systems and digital tools for businesses in Praxedis G. Guerrero, Chihuahua. Proof the same model works on both sides of the border.</p>
+              <a class="case__link" href="https://praxedistechnologies.com" rel="noopener noreferrer" target="_blank">Visit praxedistechnologies.com</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section story" id="story" aria-labelledby="story-title">
+      <div class="container story__grid">
+        <div class="story__intro">
+          <img class="story__portrait" src="/img/pedro.webp" width="168" height="168" loading="lazy" decoding="async" alt="Portrait of Pedro M. Dominguez">
+          <h2 class="section__title" id="story-title">From Ciudad Juárez to Oklahoma City</h2>
+          <blockquote class="story__quote">
+            <p>Serving my neighbors breakfast by morning, shipping them production software by night. Ambition has no dress code.</p>
+          </blockquote>
+        </div>
+        <ol class="timeline">
+          <li class="timeline__item">
+            <span class="timeline__when">1995</span>
+            <p>Born in Ciudad Juárez, Chihuahua, México.</p>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__when">2000</span>
+            <p>At five years old, my mother brought me to Oklahoma City. A single mother who gave up everything so I could have a chance here.</p>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__when">School</span>
+            <p>Graduated from Emerson High School. Everything after that I taught myself, through books, curiosity and long days at the Metropolitan Library.</p>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__when">Today</span>
+            <p>Mornings serving neighbors at the McDonald's on E. Reno. The rest of the day, building web apps for the businesses and nonprofits around me.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section process" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <h2 class="section__title" id="process-title">From first call to launch</h2>
+        <ol class="process__list">
+          <li class="process__step">
+            <h3>Free 30-minute call</h3>
+            <p>We talk about your business and what your customers need. No jargon and no pressure.</p>
+          </li>
+          <li class="process__step">
+            <h3>Build in 1 to 3 weeks</h3>
+            <p>You get a live link to watch it come together on your own phone. Two rounds of revisions are included.</p>
+          </li>
+          <li class="process__step">
+            <h3>Launch</h3>
+            <p>Your app goes live on Cloudflare with your domain and HTTPS. You own the code from day one.</p>
+          </li>
+          <li class="process__step">
+            <h3>I keep it running</h3>
+            <p>Updates, fixes and questions come straight to me. No ticket queue.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section pricing" id="pricing" aria-labelledby="pricing-title">
+      <div class="container pricing__grid">
+        <div>
+          <h2 class="section__title" id="pricing-title">One price, said plainly</h2>
+          <p class="section__lead">The same offer for a corner shop, a church or a startup. Half up front, half on launch day.</p>
+        </div>
+        <div class="plan">
+          <p class="plan__price"><span class="plan__amount">$300</span> <span class="plan__unit">to build your web app</span></p>
+          <p class="plan__monthly">+ $20 a month to host, run and maintain it</p>
+          <ul class="plan__list">
+            <li>Custom design that works on every phone</li>
+            <li>Launch on Cloudflare's network with HTTPS</li>
+            <li>You own the source code</li>
+            <li>Two rounds of revisions</li>
+            <li>30 days of support after launch</li>
+          </ul>
+          <p class="plan__note">Not included: your domain name, usually $10 to $15 a year.</p>
+          <a class="button button--primary" href="#contact">Book a free call</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact__grid">
+        <div class="contact__intro">
+          <h2 class="section__title" id="contact-title">Tell me about your business</h2>
+          <p class="section__lead">I reply within one business day with ideas and a time for your free call.</p>
+          <ul class="contact__direct">
+            <li><span>Text</span><a href="sms:+14059847036">(405) 984-7036</a></li>
+            <li><span>Email</span><a href="mailto:domingueztechsolutions@gmail.com">domingueztechsolutions@gmail.com</a></li>
+            <li><span>GitHub</span><a href="https://github.com/grenas405" rel="noopener noreferrer" target="_blank">grenas405</a></li>
+            <li><span>Instagram</span><a href="https://www.instagram.com/pedrom.dominguez/" rel="noopener noreferrer" target="_blank">@pedrom.dominguez</a></li>
+            <li><span>Facebook</span><a href="https://www.facebook.com/profile.php?id=61587993407103" rel="noopener noreferrer" target="_blank">Pedro M. Dominguez</a></li>
+          </ul>
+        </div>
+
+        <form class="form" action="/api/contact" method="post" novalidate data-contact-form>
+          <div class="form__field">
+            <label for="f-name">Your name</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required minlength="2" maxlength="100" aria-describedby="e-name">
+            <p class="form__error" id="e-name" data-error-for="name"></p>
+          </div>
+          <div class="form__field">
+            <label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required maxlength="254" aria-describedby="e-email">
+            <p class="form__error" id="e-email" data-error-for="email"></p>
+          </div>
+          <div class="form__row">
+            <div class="form__field">
+              <label for="f-phone">Phone <span class="form__optional">(optional)</span></label>
+              <input id="f-phone" name="phone" type="tel" autocomplete="tel" maxlength="30" aria-describedby="e-phone">
+              <p class="form__error" id="e-phone" data-error-for="phone"></p>
+            </div>
+            <div class="form__field">
+              <label for="f-org">Business or nonprofit <span class="form__optional">(optional)</span></label>
+              <input id="f-org" name="organization" type="text" autocomplete="organization" maxlength="120" aria-describedby="e-organization">
+              <p class="form__error" id="e-organization" data-error-for="organization"></p>
+            </div>
+          </div>
+          <div class="form__field">
+            <label for="f-message">What do you need?</label>
+            <textarea id="f-message" name="message" rows="5" required minlength="10" maxlength="2000" aria-describedby="e-message"></textarea>
+            <p class="form__error" id="e-message" data-error-for="message"></p>
+          </div>
+          <div class="form__trap" aria-hidden="true">
+            <label for="f-website">Leave this empty</label>
+            <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off">
+          </div>
+          <button class="button button--primary form__submit" type="submit" data-submit>Send message</button>
+          <p class="form__status" role="status" aria-live="polite" data-form-status></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>© 2026 Pedro M. Dominguez, Oklahoma City.</p>
+      <p>Built by one person with Claude Code. Served by Cloudflare Workers.</p>
+    </div>
+  </footer>
+</body>
+</html>

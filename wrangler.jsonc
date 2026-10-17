@@ -1,0 +1,22 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "portfolio-app-v4",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-01",
+  "observability": { "enabled": true },
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    // The Worker answers every request first so it can route pages,
+    // run the API and attach security headers to every response.
+    "run_worker_first": true,
+    "html_handling": "none",
+    "not_found_handling": "none"
+  },
+  "kv_namespaces": [
+    // Create with: npx wrangler kv namespace create CONTACT_KV
+    // then paste the returned id here.
+    { "binding": "CONTACT_KV" }
+  ],
+  "vars": { "APP_VERSION": "1.0.0" }
+}

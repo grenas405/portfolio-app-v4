@@ -1,0 +1,77 @@
+/* Design tokens. Every color, size and duration lives here. */
+
+@font-face {
+  font-family: "Bricolage Grotesque";
+  src: url("/fonts/bricolage-grotesque.woff2") format("woff2-variations");
+  font-weight: 200 800;
+  font-stretch: 75% 100%;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/inter.woff2") format("woff2-variations");
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/fonts/jetbrains-mono.woff2") format("woff2-variations");
+  font-weight: 100 800;
+  font-display: swap;
+}
+
+:root {
+  /* Palette: night over Oklahoma City, lit by Cloudflare orange. */
+  --ink-0: #070a13;
+  --ink-1: #0a0e1a;
+  --ink-2: #111827;
+  --ink-3: #1a2336;
+  --line: #243049;
+  --line-soft: rgb(148 163 194 / 0.14);
+  --text: #e8ecf4;
+  --text-muted: #9aa6bd;
+  --text-faint: #6b7791;
+  --orange: #f38020;
+  --orange-deep: #d9650a;
+  --amber: #fbad41;
+  --edge-blue: #4f8bff;
+  --ok: #3ccf91;
+  --danger: #ff6b6b;
+
+  --font-display: "Bricolage Grotesque", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  /* Type scale, ratio ~1.25 on a 17px base. */
+  --step--1: 0.875rem;
+  --step-0: 1.0625rem;
+  --step-1: 1.3125rem;
+  --step-2: 1.625rem;
+  --step-3: clamp(1.875rem, 1.4rem + 1.8vw, 2.75rem);
+  --step-4: clamp(2.5rem, 1.6rem + 3.6vw, 4.25rem);
+  --step-5: clamp(3rem, 1.4rem + 7vw, 7.5rem);
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --space-9: 7rem;
+
+  --gutter: clamp(1rem, 0.5rem + 2.5vw, 2.5rem);
+  --measure: 62ch;
+  --max-width: 76rem;
+  --header-height: 4.25rem;
+
+  --radius-small: 6px;
+  --radius: 10px;
+  --radius-large: 20px;
+  --radius-phone: 34px;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 160ms;
+  --duration: 320ms;
+}
